@@ -4,14 +4,9 @@ Inverse data flow, callback function and introduction to UI frameworks.
 
 ## Features
 
-- Vite.js for overall bundling
-- Vitest for unit testing
+- Webpack for overall bundling
 - React.js library for web app development
-- Third party library for redux(redux toolkit) and router
-- Tailwind CSS for fast styling
-- Three.js through React-three-fiber for 3d-development
-- GSAP library for fast and easy animation
-- Typescript for scalability.
+- Material UI for fast and beautiful UIs
 
 ## Run Locally
 
