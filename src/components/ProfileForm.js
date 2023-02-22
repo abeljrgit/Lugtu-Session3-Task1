@@ -210,7 +210,9 @@ export class ProfileForm extends Component {
               this.onChangeHandler('name', e.target.value);
             }}
           />
-          <Typography>{this.state.error.nameError}</Typography>
+          <Typography sx={{ color: 'red', fontSize: 14 }}>
+            {this.state.error.nameError}
+          </Typography>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker
               id="dateOfBirth"
@@ -234,7 +236,9 @@ export class ProfileForm extends Component {
               }}
             />
           </LocalizationProvider>
-          <Typography>{this.state.error.dateOfBirthError}</Typography>
+          <Typography sx={{ color: 'red', fontSize: 14 }}>
+            {this.state.error.dateOfBirthError}
+          </Typography>
           <TextField
             label="Email"
             variant="outlined"
@@ -243,7 +247,9 @@ export class ProfileForm extends Component {
             }}
             sx={{ mt: 4 }}
           />
-          <Typography>{this.state.error.emailError}</Typography>
+          <Typography sx={{ color: 'red', fontSize: 14 }}>
+            {this.state.error.emailError}
+          </Typography>
           <TextField
             label="Contact Number"
             variant="outlined"
@@ -252,7 +258,9 @@ export class ProfileForm extends Component {
             }}
             sx={{ mt: 4 }}
           />
-          <Typography>{this.state.error.contactError}</Typography>
+          <Typography sx={{ color: 'red', fontSize: 14 }}>
+            {this.state.error.contactError}
+          </Typography>
           <TextField
             maxRows={5}
             minRows={5}
@@ -264,7 +272,9 @@ export class ProfileForm extends Component {
             }}
             sx={{ mt: 4 }}
           />
-          <Typography>{this.state.error.tellMeAboutYourselfError}</Typography>
+          <Typography sx={{ color: 'red', fontSize: 14 }}>
+            {this.state.error.tellMeAboutYourselfError}
+          </Typography>
           <Button variant="contained" size="large" sx={{ mt: 2 }} type="submit">
             Submit
           </Button>
