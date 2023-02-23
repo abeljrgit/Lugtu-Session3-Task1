@@ -189,12 +189,21 @@ export class ProfileForm extends Component {
         this.state.contact,
         this.state.tellMeAboutYourself
       );
+
       this.setState({
         name: '',
-        age: '',
+        dateOfBirth: null,
         email: '',
         contact: '',
-        formValid: false,
+        tellMeAboutYourself: '',
+        error: {
+          nameError: '',
+          dateOfBirthError: '',
+          emailError: '',
+          contactError: '',
+          tellMeAboutYourselfError: '',
+        },
+        isFormValid: false,
       });
     }
   };
@@ -206,6 +215,7 @@ export class ProfileForm extends Component {
           <TextField
             label="Name"
             variant="outlined"
+            value={this.state.name}
             onChange={(e) => {
               this.onChangeHandler('name', e.target.value);
             }}
@@ -242,6 +252,7 @@ export class ProfileForm extends Component {
           <TextField
             label="Email"
             variant="outlined"
+            value={this.state.email}
             onChange={(e) => {
               this.onChangeHandler('email', e.target.value);
             }}
@@ -253,6 +264,7 @@ export class ProfileForm extends Component {
           <TextField
             label="Contact Number"
             variant="outlined"
+            value={this.state.contact}
             onChange={(e) => {
               this.onChangeHandler('contact', e.target.value);
             }}
@@ -267,6 +279,7 @@ export class ProfileForm extends Component {
             multiline
             size="md"
             label="Tell me about yourself"
+            value={this.state.tellMeAboutYourself}
             onChange={(e) => {
               this.onChangeHandler('tellMeAboutYourself', e.target.value);
             }}
