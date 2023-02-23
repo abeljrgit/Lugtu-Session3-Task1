@@ -10,7 +10,7 @@ import {
 export class ProfileForm extends Component {
   state = {
     name: '',
-    dateOfBirth: '',
+    dateOfBirth: null,
     email: '',
     contact: '',
     tellMeAboutYourself: '',
